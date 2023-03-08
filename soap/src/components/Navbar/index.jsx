@@ -2,19 +2,21 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline' 
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'About us', href: '/about', current: false },
     { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Blog', href: '#', current: false },
+    { name: 'Registration', href: '#', current: false },
+    { name: 'Contact', href: '#', current: false },
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
-    <Disclosure as="nav" className="bg-green-50">
+    <Disclosure as="nav" className="bg-green-50" id='navbar'>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -82,6 +84,7 @@ export default function Navbar() {
               ))}
             </div>
           </Disclosure.Panel>
+          {props.children}
         </>
       )}
     </Disclosure>

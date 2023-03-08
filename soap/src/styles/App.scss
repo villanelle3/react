@@ -1,6 +1,9 @@
 @import 'index.scss';
 @import "~bootstrap/scss/bootstrap";
 
+#navbar{
+    margin-bottom: 24px;
+}
 
 h1{
     font-family: $title;

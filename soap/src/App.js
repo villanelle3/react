@@ -1,19 +1,23 @@
 import './styles/App.scss';
 import './styles/index.css';
 import EstiloGlobal from './styles/styles.jsx';
+import Main from './pages/main';
+import About from './pages/about';
 import Navbar from './components/Navbar';
-import ContainerEx from './components/Colu';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <EstiloGlobal/>
-      <Navbar />
-      <ContainerEx />
-      <header className="App-header">
-        <h1 className='bg-red-300'>TODO</h1>
-      </header>
-    </div>
+      <Navbar/>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Main/>} />
+            <Route path='/about' element={<About/>} />
+          </Routes>
+        </BrowserRouter>
+    </>
   );
 }
 
