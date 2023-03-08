@@ -9,14 +9,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <EstiloGlobal/>
-      <Navbar/>
-        <BrowserRouter>
+      <BrowserRouter>
+        <EstiloGlobal/>
+        <Navbar/>
           <Routes>
             <Route path='/' element={<Main/>} />
             <Route path='/about' element={<About/>} />
           </Routes>
-        </BrowserRouter>
+      </BrowserRouter>
     </>
   );
 }
