@@ -1,5 +1,3 @@
-import '../styles/App.scss';
-import '../styles/index.css';
 import ContainerEx from '../components/Colu';
 
 function About() {
