@@ -1,4 +1,5 @@
 import './styles/App.scss';
+import './styles/index.css';
 import EstiloGlobal from './styles/styles.jsx';
 import Navbar from './components/Navbar';
 
@@ -8,7 +9,7 @@ function App() {
       <EstiloGlobal/>
       <Navbar />
       <header className="App-header">
-        <h1>TODO</h1>
+        <h1 className='bg-red-300'>TODO</h1>
       </header>
     </div>
   );
