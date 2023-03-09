@@ -78,5 +78,10 @@ h1{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        @media screen and (max-width: $mobile) {
+            width: 60px;
+        }
     }
 }
+
+
