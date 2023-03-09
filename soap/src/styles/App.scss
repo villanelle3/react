@@ -91,15 +91,33 @@ h1{
     }
     &__img-logo{
         width: 80px;
-        margin-top: 10px;
-        margin-bottom: 10px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto 10px auto;
         @media screen and (max-width: $mobile) {
             width: 60px;
         }
     }
 }
 
-
+.containerinfo{
+    padding: 40px;
+    background-color: $greentone;
+    h1{
+        color: white;
+        font-size: 33px;
+    }
+    &__btn{
+        border: 1px solid white;
+        text-transform: uppercase;
+        padding: 14px;
+        border-radius: 14px;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover{
+            border: 1px solid white;
+            background-color: white;
+            color: $greentone;
+        }
+    }
+    
+}

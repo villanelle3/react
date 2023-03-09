@@ -1,4 +1,4 @@
-import ContainerEx from '../components/Colu';
+import ContainerEx from '../components/ContainerInfo';
 import CarouselMain from '../components/Carousel';
 
 function Main() {
@@ -6,10 +6,6 @@ function Main() {
         <div className="App">
         <CarouselMain />
         <ContainerEx />
-        <header className="App-header">
-            <h1 className='bg-red-300'>TODO</h1>
-            <h2>HELLO WORLD</h2>
-        </header>
         </div>
     );
 }
