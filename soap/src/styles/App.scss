@@ -15,7 +15,8 @@ $mobile: 767px;
 
 .carimg {
     @include ImgSize(pc);
-    object-fit:fill;
+    object-fit: fill;
+    
     @media screen and (max-width: $mobile) {
         @include ImgSize(mobile);
     }
@@ -27,8 +28,14 @@ $mobile: 767px;
 .img-bg{
     background: $ligthgreenTone;
     @include ImgSize(pc);
-    opacity: 0.15;
+    opacity: 0.1;
     position: absolute;
+    &:hover{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
     @media screen and (max-width: $mobile) {
         @include ImgSize(mobile);
     }
@@ -45,10 +52,20 @@ h1{
     color: $ligthgreenTone;
 }
 
+.leftSize{
+    margin-left: 60%;
+    @media screen and (max-width: $mobile) {
+        margin-left: 12%;
+    }
+}
+
+.rightSize{
+    margin-left: 12%;
+}
+
 .hero{
     position: absolute;
     z-index: 99;
-    margin-left: 12%;
     margin-top: 8%;
     border-radius: 6px;
     width: 30%;
