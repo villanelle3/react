@@ -1,8 +1,39 @@
 @import 'index.scss';
 @import "~bootstrap/scss/bootstrap";
+$mobile: 767px;
 
-#navbar{
-    margin-bottom: 24px;
+@mixin ImgSize($device) {
+    width: 100%;
+    @if $device == mobile {
+        height: 400px;
+    } @else if $device == tablet {
+        height: 600px;
+    } @else if $device == pc {
+        height: 633px;
+    }
+}
+
+.carimg {
+    @include ImgSize(pc);
+    @media screen and (max-width: $mobile) {
+        @include ImgSize(mobile);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @include ImgSize(tablet);
+    }
+}
+
+.img-bg{
+    background: $ligthgreenTone;
+    @include ImgSize(pc);
+    opacity: 0.15;
+    position: absolute;
+    @media screen and (max-width: $mobile) {
+        @include ImgSize(mobile);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @include ImgSize(tablet);
+    }
 }
 
 h1{
@@ -11,4 +42,41 @@ h1{
 
 .teste{
     color: $ligthgreenTone;
+}
+
+.hero{
+    position: absolute;
+    z-index: 99;
+    margin-left: 12%;
+    margin-top: 8%;
+    border-radius: 6px;
+    width: 30%;
+    padding: 3%;
+    @media screen and (max-width: $mobile) {
+        width: 75%;
+        padding: 5%;
+    }
+    &__title{
+        font-size: 33px;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.5px 0.5px $strongblack;
+        @media screen and (max-width: $mobile) {
+            font-size: 23.1px;
+        }
+    }
+    &__desc{
+        font-size: 15px;
+        color: $ligthblack;
+        @media screen and (max-width: $mobile) {
+            font-size: 14px;
+        }
+    }
+    &__img-logo{
+        width: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
