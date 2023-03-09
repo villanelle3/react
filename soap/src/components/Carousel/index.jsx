@@ -13,9 +13,9 @@ const CarouselItem = [
   { id: 2, H1: 'Projects', IMG: './images/2.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
   { id: 3, H1: 'Blog', IMG: './images/3.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
   { id: 4, H1: 'Registration', IMG: './images/4.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
-  { id: 5, H1: 'Contact', IMG: './images/7.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
-  { id: 6, H1: 'Contact', IMG: './images/8.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
-  { id: 7, H1: 'Contact', IMG: './images/9.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
+  { id: 5, H1: '55', IMG: './images/7.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
+  { id: 6, H1: '66', IMG: './images/8.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
+  { id: 7, H1: '77', IMG: './images/9.png', H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
 ]
 
 function CarouselMain() {
