@@ -15,7 +15,7 @@ const CarouselItem = [
   { id: 3, H1: 'Our newest project', IMG: './images/3.png', leftSize: false, H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
   { id: 4, H1: '陈瑜 ESTELLE CHEN', IMG: './images/4.png', leftSize: true, H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
   { id: 5, H1: 'opportunities for all', IMG: './images/7.png', leftSize: true, H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
-  { id: 6, H1: '66', IMG: './images/8.png', leftSize: false, H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
+  { id: 6, H1: 'Share your talent', IMG: './images/8.png', leftSize: false, H2: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt officiis assumenda id quo, neque eligendi nobis aperiam sunt magni eaque pariatur consequuntur dolorem itaque, provident totam debitis illum culpa atque.'},
 ]
 
 function CarouselMain() {

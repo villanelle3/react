@@ -5,9 +5,9 @@ $mobile: 767px;
 @mixin ImgSize($device) {
     width: 100%;
     @if $device == mobile {
-        height: 400px; // 16:9
+        height: 360px; // 16:9
     } @else if $device == tablet {
-        height: 600px;
+        height: 550px;
     } @else if $device == pc {
         height: 633px;
     }
@@ -16,7 +16,6 @@ $mobile: 767px;
 .carimg {
     @include ImgSize(pc);
     object-fit: fill;
-    
     @media screen and (max-width: $mobile) {
         @include ImgSize(mobile);
     }
@@ -81,6 +80,9 @@ h1{
         @media screen and (max-width: $mobile) {
             font-size: 23.1px;
         }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 26px;
+        }
     }
     &__desc{
         font-size: 15px;
@@ -96,6 +98,9 @@ h1{
         @media screen and (max-width: $mobile) {
             width: 60px;
         }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            width: 70px;
+        }
     }
 }
 
@@ -105,6 +110,10 @@ h1{
     h1{
         color: white;
         font-size: 33px;
+        @media screen and (max-width: $mobile) {
+            font-size: 25px;
+            text-align: center;
+        }
     }
     &__btn{
         border: 1px solid white;
@@ -113,6 +122,16 @@ h1{
         border-radius: 14px;
         font-size: 14px;
         font-weight: bold;
+        @media screen and (max-width: $mobile) {
+            font-size: 12px;
+            padding: 12px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin-top: 16px;
+        }
         &:hover{
             border: 1px solid white;
             background-color: white;
@@ -131,3 +150,55 @@ h1{
     background-color: aquamarine;
 }
 
+.card_style{
+    transition: 0.5s;
+    @media screen and (max-width: $mobile) {
+        max-width: 80%;
+        margin-top: 16px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        margin-top: 18px;
+    }
+    &:hover{
+        border: 1px solid $ligthgreenTone;
+    }
+}
+
+.containerInfo{
+    padding: 50px;
+    @media screen and (max-width: $mobile) {
+        padding: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+        font-size: 33px;
+        @media screen and (max-width: $mobile) {
+            font-size: 30px;
+        }
+    }
+    hr{
+        width: 20%;
+        z-index: 99;
+        border-top: 4px solid $greentone;
+        display: block;
+        margin: 16px auto;
+        @media screen and (max-width: $mobile) {
+            width: 30%;
+        }
+    }
+    p{
+        color: $ligthblack;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 180px;
+        @media screen and (max-width: $mobile) {
+            margin: 0 8px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin: 0 50px;
+        }
+    }
+}

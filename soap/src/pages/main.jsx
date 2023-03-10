@@ -4,6 +4,7 @@ import CardMain from '../components/Cards';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import InfoIcons from '../components/InfosIcons';
 
 function Main() {
     return (
@@ -32,7 +33,7 @@ function Main() {
                 </Col>
             </Row>
         </Container>
-        
+        <InfoIcons/>
         </div>
     );
 }
