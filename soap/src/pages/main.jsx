@@ -15,17 +15,20 @@ function Main() {
                 <Col><CardMain 
                     title='Regular Events'
                     desc='Donec a euismod eros, nec porttitor sapien. Proin aliquam et tortor et elementum. Aenean ac fringilla 
-                    nulla, sed pulvinar arcu. Phasellus lacinia vehicula luctus.'/>
+                    nulla, sed pulvinar arcu. Phasellus lacinia vehicula luctus.'
+                    image='pic1'/>
                 </Col>
                 <Col><CardMain 
                     title='Models Heritage'
                     desc='Aenean ac fringilla nulla, sed pulvinar arcu. Phasellus lacinia vehicula luctus. Donec a euismod eros, 
-                    nec porttitor sapien. Proin aliquam et tortor et elementum.' />
+                    nec porttitor sapien. Proin aliquam et tortor et elementum.'
+                    image='pic2' />
                 </Col>
                 <Col><CardMain 
                     title='Agency Shows'
                     desc='Phasellus lacinia vehicula luctus. Donec a euismod eros, nec porttitor sapien. Proin aliquam et tortor 
-                    et elementum. Proin aliquam et tortor et elementum. Aenean ac fringilla nulla, sed pulvinar arcu.' />
+                    et elementum. Proin aliquam et tortor et elementum. Aenean ac fringilla nulla, sed pulvinar arcu.'
+                    image='pic3' />
                 </Col>
             </Row>
         </Container>
