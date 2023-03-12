@@ -24,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+// https://my-json-server.typicode.com/villanelle3/fake-api/character
