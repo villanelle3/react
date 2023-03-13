@@ -1,9 +1,13 @@
+import TitleSubtitle from "../components/TitleSubtitle";
 function About() {
     return (
         <div className="App">
-        <header className="App-header">
-            <h1 className='bg-red-300'>About us<br/><br/></h1>
-        </header>
+            <TitleSubtitle
+                id='title1-About'
+                title='About Us'
+                subtitle='Sed egestas, sapien a pellentesque euismod, odio nibh dignissim nulla, euismod lacinia arcu turpis gravida
+                tortor. Donec tempor enim ut sollicitudin pulvinar. Nulla sit amet blandit lectus.'
+            />
         </div>
     );
 }

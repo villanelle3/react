@@ -3,9 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-function Modal1() {
+function Modal1(props) {
     const [show, setShow] = useState(false);
-
+    const [name, setname] = useState("");
+    const [message, setmessage] = useState("");
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -26,6 +27,10 @@ function Modal1() {
                     type="texte"
                     autoFocus
                     autoComplete='off'
+                    value={name}
+                    onChange={(e) => {
+                        setname(e.target.value);
+                    }}
                 />
                 </Form.Group>
 
@@ -34,6 +39,7 @@ function Modal1() {
                 <Form.Control
                     type="email"
                     placeholder="name@example.com"
+                    required
                 />
                 </Form.Group>
                 
@@ -42,7 +48,14 @@ function Modal1() {
                 controlId="exampleForm.ControlTextarea1"
                 >
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} autoComplete='off' />
+                <Form.Control as="textarea" 
+                    rows={3} 
+                    autoComplete='off'
+                    value={message}
+                    onChange={(e) => {
+                        setmessage(e.target.value);
+                    }}
+                />
                 </Form.Group>
             </Form>
             </Modal.Body>

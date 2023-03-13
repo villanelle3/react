@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/esm/Container';
 import Modal1 from '../Modals';
 
-function ContainerEx() {
+function ContainerEx(props) {
     return (
         <>
             <header className="App-header">
@@ -10,10 +10,13 @@ function ContainerEx() {
                     <Modal1/>
                 </div>
                 <Container fluid>
-                <blockquote class="blockquote text-center blockquote-message">
-                    <p class="mb-0 blockquote-message__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
+                {/* <blockquote className="blockquote text-center blockquote-message">
+                    <p className="mb-0 blockquote-message__p">
+                        {props.name ? props.name : 'Your Message here'}
+                    </p>
+                    <footer className="blockquote-footer">
+                        Happy client <cite title="Source Title">{props.message ? props.message : 'Your Name'}</cite></footer>
+                </blockquote> */}
                 </Container>
             </header>
         </>
